@@ -1,18 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <HelloWorld class="animate__animated animate__bounce" msg="Welcome to Your Vue.js App"/> -->
+    <LogoComponent class="animate__animated animate__slideInDown" :width="700" />
+    <br>
+    <MainPageContent />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import LogoComponent from "@/components/LogoComponent";
+import MainPageContent from "@/components/MainPageContent";
+
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    LogoComponent,
+    HelloWorld,
+    MainPageContent
   }
 }
 </script>

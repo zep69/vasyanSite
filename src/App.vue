@@ -1,8 +1,10 @@
 <template>
-  <div id="nav">
+
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
+
   <router-view/>
 </template>
 
@@ -18,6 +20,7 @@
 #nav {
   padding: 30px;
 }
+
 
 #nav a {
   font-weight: bold;
