@@ -1,12 +1,23 @@
 <template>
+	<div class="app">
+		<HeaderComponent style="z-index: 2"/>
+		<!-- <div id="nav">
+			<router-link to="/">Home</router-link> |
+			<router-link to="/about">About</router-link>
+		</div> -->
 
-  <!-- <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div> -->
+		<router-view/>
+	</div>
 
-  <router-view/>
 </template>
+<script>
+import HeaderComponent from "./components/HeaderComponent";
+export default {
+	components:{
+		HeaderComponent
+	}
+}
+</script>
 
 <style>
 #app {
@@ -20,8 +31,17 @@
 #nav {
   padding: 30px;
 }
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	/*background-color: #cecccc;*/
+	z-index: 0;
 
-
+}
+.app{
+	background-color: #cecccc;
+}
 #nav a {
   font-weight: bold;
   color: #2c3e50;

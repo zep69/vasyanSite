@@ -57,9 +57,25 @@ export default {
 </script>
 
 <style scoped>
+span{
+	background-color: #e8e5e5;
+}
+h3{
+	background-color: #e8e5e5;
+}
+h4{
+	background-color: #e8e5e5;
+}
+h2{
+	background-color: #e8e5e5;
+}
+li{
+	background-color: #e8e5e5;
+}
 .cardStyle{
   border-radius: 2rem;
-  border: 1px solid grey
+  border: 1px solid grey;
+
 }
 .imgVasyan{
   width:40rem;

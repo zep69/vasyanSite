@@ -1,5 +1,5 @@
 <template>
-  <img src="../assets/vasyanLogo.png" :style="{width:$props.width+'px'}" alt="">
+  <img src="../assets/vasyanLogo.png" :style="{width:$props.width+'px', background:'none'}" alt="">
 </template>
 
 <script>
