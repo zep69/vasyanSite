@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div class="home animate__animated animate__fadeIn animate__slow">
     <!-- <HelloWorld class="animate__animated animate__bounce" msg="Welcome to Your Vue.js App"/> -->
 
 
-    <LogoComponent class="animate__animated animate__slideInDown" :width="700" />
+    <LogoComponent class="" :width="700" />
     <br>
-		<NewMainComponent/>
+		<NewMainComponent class=""/>
 		<br>
 		<!-- <MainPageContent /> -->
 
@@ -35,4 +35,6 @@ export default {
 *{
 	/*background-color: #cecccc;*/
 }
+
+
 </style>

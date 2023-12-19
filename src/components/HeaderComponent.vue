@@ -4,7 +4,7 @@
 			<LogoComponent style="align-self: center; background-color: grey;" width="100"/>
 			<div class="buttons">
 				<div v-for="item in buttons" style="background-color: grey;">
-					<button>{{item.name}}</button>
+					<button @click="$router.push(item.route)">{{item.name}}</button>
 				</div>
 
 			</div>
@@ -22,9 +22,9 @@ export default {
 	data(){
 		return {
 			buttons:[
-				{name:'Проекты'},
-				{name:'Сотрудники'},
-				{name:'Планы'}
+				{name:'Проекты', route:'/'},
+				{name:'Сотрудники', route:'/employee'},
+				{name:'Планы', route:'/about'}
 			]
 		}
 	}

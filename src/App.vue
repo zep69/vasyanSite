@@ -1,12 +1,14 @@
 <template>
 	<div class="app">
-		<HeaderComponent style="z-index: 2"/>
+		<HeaderComponent class="animate__animated animate__slideInDown" style="z-index: 5"/>
 		<!-- <div id="nav">
 			<router-link to="/">Home</router-link> |
 			<router-link to="/about">About</router-link>
 		</div> -->
+		<transition name="bounce" >
+			<router-view   />
+		</transition>
 
-		<router-view/>
 	</div>
 
 </template>
@@ -35,8 +37,8 @@ export default {
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
-	/*background-color: #cecccc;*/
-	z-index: 0;
+	background-color: #cecccc;
+	z-index: 1;
 
 }
 .app{
@@ -50,4 +52,22 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+.bounce-enter-active {
+	animation: bounce-in .5s;
+}
+.bounce-leave-active {
+	animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 </style>

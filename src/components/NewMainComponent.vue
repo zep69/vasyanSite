@@ -1,5 +1,5 @@
 <template>
-	<div style="display: flex; justify-content: center;">
+	<div style="display: flex; justify-content: center;" class="">
 		<div class="cardStyle">
 			<div style="display: flex; justify-content: center;"><h3>Немного информации о "компании" Vasyan development</h3></div>
 			<div>
@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	<br>
-	<div style="display: flex; justify-content: center;">
+	<div style="display: flex; justify-content: center;" class="">
 		<div class="cardStyle">
 			<h3>Отзывы наших клиентов</h3>
 			<div style="display: flex; justify-content: center; margin-bottom: 5px" v-for="item in comments">

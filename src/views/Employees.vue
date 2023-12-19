@@ -1,5 +1,7 @@
 <template>
-
+	<div>
+		<h3>Типа сотрудники</h3>
+	</div>
 </template>
 
 <script>
