@@ -53,7 +53,7 @@ export default {
 				{
 					name:'Алексей Шляпин',
 					img:require('../assets/photo_2023-12-18_17-24-44.jpg'),
-					comment: 'Что там с Вики, есть сподвижки?'
+					comment: 'Это кто?'
 				}
 			]
 		}
